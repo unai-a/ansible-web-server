@@ -15,7 +15,10 @@ Before running the Ansible playbook, ensure that you have:
 
    ```bash
    git clone https://github.com/your-username/ansible-web-server.git
+    ```
    ```bash
    cd ansible-web-server
+    ```
    ```bash
    ansible-playbook -i inventory.ini web_server_setup.yml
+    ```
