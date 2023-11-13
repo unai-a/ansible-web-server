@@ -23,6 +23,6 @@ Before running the Ansible playbook, ensure that you have:
     ```
 ## Customization
 
-   .Customize the website files in the website/ directory according to your needs.
-   .Adjust variables and configurations in the playbook and templates as necessary.
+   1. Customize the website files in the website/ directory according to your needs.
+   2. Adjust variables and configurations in the playbook and templates as necessary.
 Feel free to contribute to or open issues in this repository.
