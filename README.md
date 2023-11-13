@@ -21,3 +21,8 @@ Before running the Ansible playbook, ensure that you have:
    ```bash
    ansible-playbook -i inventory.ini web_server_setup.yml
     ```
+## Customization
+
+   .Customize the website files in the website/ directory according to your needs.
+   .Adjust variables and configurations in the playbook and templates as necessary.
+Feel free to contribute to or open issues in this repository.
