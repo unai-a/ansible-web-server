@@ -1,0 +1,57 @@
+---
+- name: Web Server Setup
+  hosts: web_servers
+  become: yes
+
+  tasks:
+    - name: Update apt package cache
+      apt:
+        update_cache: yes
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Install PHP and required modules
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - php-fpm
+        - php-cli
+        - php-mysql
+
+    - name: Copy Nginx default configuration
+      template:
+        src: templates/nginx.conf.j2
+        dest: /etc/nginx/sites-available/default
+      notify:
+        - Restart Nginx
+      tags:
+        - nginx
+
+    - name: Create web root directory
+      file:
+        path: /var/www/html
+        state: directory
+
+    - name: Copy website files to web root
+      copy:
+        src: website/
+        dest: /var/www/html/
+      tags:
+        - website
+
+    - name: Deploy modified index.php
+      template:
+        src: templates/index.php.j2
+        dest: /var/www/html/index.php
+      tags:
+        - php
+
+  handlers:
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted

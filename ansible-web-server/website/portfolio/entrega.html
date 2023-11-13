@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> Contacto </title>
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+			<link rel="shortcut icon" href="../imagenes/favicon.ico"/>
+			<link rel="stylesheet" type="text/css" href="../css/css.css">
+			<meta charset="UTF-8" />
+			<meta name="keywords" content="tus palabras clave, aqui" />
+			<meta name="description" content="breve descripcion del sitio" />
+			<meta name="author" content="autor del documento" />
+			<meta http-equiv="refresh" content="30" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+<!-- Fondo -->	
+<canvas id="stars" style="height: 155%"></canvas>
+
+
+<!-- Encabezado -->	
+<header>
+	
+				<img id="logo" src="../imagenes/Target_logo.svg.png" alt="logo"> 
+
+				<h1 id="texto">
+					Target Denda
+				</h1>
+	
+</header>
+
+	
+	<script src='https://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+	<script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script>
+	<script src="./script.js"></script>
+	<!-- Navegador en linea. -->
+	
+	<div id="body">
+
+
+
+
+	<nav class="navbar" id="myNavbar">
+  			<a href="../index.html" class="active">Inicio</a>
+  			<a href="quienes_somos.html">Quienes somos</a>
+  			<a href="productos.html">Nuestros Productos</a>
+  			<a href="formularioa.html">Contacto</a>
+	</nav>
+
+	<main>
+		<article>
+<!-- Seccion principal de la pagina. -->
+<section style="width: 100%; overflow: hidden;">
+	<!-- Formulario de Inicio de sesion. -->
+		<form enctype="multipart/form-data" action="gracias.html" method="post" style="padding: 1em;">
+			<fieldset style=" padding: 2em; width: 80%">
+			<legend> Pago </legend>
+				<input type="radio" id="domicilio" name="envio" value="domicilio">
+  				<label for="domicilio">Envio a domicilio</label>
+  				<input type="radio" id="recogida" name="envio" value="recogida">
+  				<label for="recogida">Recogica en tienda</label>
+  				<br><br>
+
+  				<select name="producto" id="producto" required>
+  					<option value="" selected disabled>--Selecciona--</option>
+  					<option value="disco_duro">Disco Duro</option>
+  					<option value="placa_base">Placa Base</option>
+  					<option value="tarjeta_grafica">Tarjeta Grafica</option>
+  					<option value="proce_i5">Procesador i5</option>
+  				</select>
+  				<br><br>
+  				<label for="numero_productos">Numero de productos:</label>
+  				<input type="number" name="numero productos" id="numero_productos" required>
+  				<br><br>
+
+  				
+                
+        
+			
+				<label for="numero_tarjeta">Numero de tarjeta:</label>
+                <input type="number" id="numero_tarjeta" required>
+                <img src="../imagenes/tarjeta.png" alt="icono_tarjeta" width="60" style="float: right;">
+           
+				<br><br>
+				<label for="mes">Fecha de Expiracion</label>
+                <select name="mes" id="mes">
+                    <option value="01">January</option>
+                    <option value="02">February </option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select>
+                    <option value="16"> 2021</option>
+                    <option value="17"> 2022</option>
+                    <option value="18"> 2023</option>
+                    <option value="19"> 2024</option>
+                    <option value="20"> 2025</option>
+                    <option value="21"> 2026</option>
+                </select>
+				<br><br>
+				<label for="cvv">CVV</label>
+                <input type="number" id="cvv" required>
+				
+				
+				<br><br>
+				<label for="dueno">Due&ntilde;o, Nombre y apellido:</label>
+                <input type="text" id="dueno" required>
+				<br><br>
+				<input type="checkbox" name="privacidad" id="privacidad" required>
+				<label for="privacidad">He leido y acepto los terminos y Politica de privacidad. </label>
+			
+				<select name="autori" id="autori" required>
+  					<option value="" selected disabled>--Selecciona una opcion--</option>
+  					<option value="si_au">SI autorizo el envio de comunicaciones</option>
+  					<option value="no_au">NO autorizo el envio de comunicaciones</option>
+  				</select>
+
+  				<br><br>
+		
+				<input type="reset" name="button" value="Cancelar"> 
+		
+			
+		
+				<input type="submit" name="button" value="Enviar">
+			
+		
+           
+           
+            
+                
+            
+        
+		
+			</fieldset>
+		</form>
+</section>
+
+
+
+</div>
+<!-- Pie de pagina. -->
+<footer>
+
+	<ul id="footer_ul">
+
+	
+
+    <li>
+
+				&copy; Copyright 2020 Unai Aguiriano Tel: 584 458 43 23
+
+	</li>
+
+
+	<li>			
+		<a href="mailto:unai.aguiriano@ikasle.egibide.org">unai.aguiriano@ikasle.egibide.org</a>
+	</li>	
+
+	<li>
+      <p id="mano">👋</p>
+    </li>	
+			
+		
+			
+	</ul>		
+				<div style="max-width:100%;list-style:none; transition: none;width:840px;height:200px; border-radius: 20px;">
+
+				<div style="height:100%; width:100%;max-width:100%;">
+
+				<iframe style="height:100%;width:100%;border:0; border-radius: 20px;" src="https://www.google.com/maps/embed/v1/place?q=los+angeles+target&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+				</div>
+				</div>
+			</article>
+			</main>
+		
+</footer>
+
+
+</html>

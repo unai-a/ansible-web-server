@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+
+	<head>
+		<title> Contacto </title>
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+			<link rel="shortcut icon" href="../imagenes/favicon.ico"/>
+			<link rel="stylesheet" type="text/css" href="../css/css.css">
+			<meta charset="UTF-8" />
+			<meta name="keywords" content="tus palabras clave, aqui" />
+			<meta name="description" content="breve descripcion del sitio" />
+			<meta name="author" content="autor del documento" />
+			<meta http-equiv="refresh" content="30" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+
+<!-- Fondo -->	
+<canvas id="stars" style="height: 200%"></canvas>
+
+
+<!-- Encabezado -->	
+<header>
+	
+				<img id="logo" src="../imagenes/Target_logo.svg.png" alt="logo"> 
+
+				<h1 id="texto">
+					Target Denda
+				</h1>
+	
+</header>
+
+	
+	<script src='https://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+	<script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script>
+	<script src="./script.js"></script>
+	<!-- Navegador en linea. -->
+	
+	<div id="body">
+
+
+
+
+	<nav class="navbar" id="myNavbar">
+  			<a href="../index.html" class="active">Inicio</a>
+  			<a href="quienes_somos.html">Quienes somos</a>
+  			<a href="productos.html">Nuestros Productos</a>
+  			<a href="formularioa.html">Contacto</a>
+	</nav>
+	<main>
+		<article>
+<!-- Seccion principal de la pagina -->
+		<section>
+			<form enctype="multipart/form-data" action="php.php" method="post">
+				<fieldset>
+					<legend>Cita previa</legend>
+						
+								<ul>
+
+								<li>	<label for="nombre">Nombre:</label> </li>
+								<li>	<input size="15" type="text" name="nombre" id="nombre" required> </li>
+									
+								
+								<li>	<label for="correo"> Correo Electronico:</label> </li>
+								<li>	<input size="15" type="email" name="correo" id="correo" required> </li>
+								
+								<li>	<label for="tel">Telefono:</label> </li>
+								<li>	<input type="tel" name="tel" id="tel"> </li>
+									
+							
+								<li>	<label for="date">Fecha de reserva:</label> </li>
+								<li>	<input type="date" name="date" id="date"> </li>
+									
+								
+									
+								<li>	<label for="hora">Franja Horaria:</label> </li>
+								<div class="select">
+								<select name="mes" id="hora"> </li>
+							  		<option value="" selected>- selecciona -</option>
+							  		<option value="1">13:00 -- 14:00</option> 
+							   		<option value="2">14:00 -- 15:00</option> 
+							   		<option value="3">20:00 -- 21:00</option>  
+								</select> 
+									</div>
+								
+								<li>	<label for="deman">Desarrolla tu pregunta o comentario:</label> </li>
+								<li>	<textarea id="deman" name="deman" cols="79.8" rows="8" required> ...
+								
+									</textarea> </li>
+								
+
+									<input class="boton" type="submit" name="button" value="Guardar Cambios"> 
+									<input class="boton" type="reset" name="button" value="Borrar los datos introducidos"> 
+
+								</ul>
+			</fieldset>
+		</form>
+
+
+		</section>	
+		
+				
+				<!-- Un elemento a un lado. (Derecha en este caso) -->
+				<aside>
+				
+					<h1 id="texto">
+						Productos Destacados
+					</h1>
+						<div class="aside_div">
+							<h3>Producto numero 1</h3>
+  							<img src="../imagenes/disco_duro.png" alt="Disco Duro" style="width:75%">
+  							<p>Disco Duro</p>
+  							<p>20€</p>
+  							<form action="sesion.html" method="get">  
+  							<input type="submit" name="button" value="Comprar">
+  							</form>
+						</div>
+								
+						<div class="aside_div">
+							<h3>Producto numero 2</h3>
+  							<img src="../imagenes/placa_amd.jpg" alt="Placa Base" style="width:75%">
+  							<p>Placa Base</p>
+  							<p>75€</p>
+  							<form action="sesion.html" method="get">  
+  							<input type="submit" name="button" value="Comprar">
+  							</form>
+						</div>
+
+						<form action="php.php" method="post">
+							<input id="bilatu" type="search" name="bilatu" value="Bilatu...">
+		  					<input type="submit" value="Bilatu">
+		  				</form>
+				</aside>
+			
+		
+	
+
+</div>	
+<!-- Pie de pagina. -->
+<footer>
+
+	<ul id="footer_ul">
+
+	
+
+    <li>
+
+				&copy; Copyright 2020 Unai Aguiriano Tel: 584 458 43 23
+
+	</li>
+
+
+	<li>			
+		<a href="mailto:unai.aguiriano@ikasle.egibide.org">unai.aguiriano@ikasle.egibide.org</a>
+	</li>	
+
+	<li>
+      <p id="mano">👋</p>
+    </li>	
+			
+		
+			
+	</ul>		
+				<div style="max-width:100%;list-style:none; transition: none;width:840px;height:200px; border-radius: 20px;">
+
+				<div style="height:100%; width:100%;max-width:100%;">
+
+				<iframe style="height:100%;width:100%;border:0; border-radius: 20px;" src="https://www.google.com/maps/embed/v1/place?q=los+angeles+target&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+				</div>
+				</div>
+			</article>
+			</main>
+		
+</footer>
+
+
+</html>
+
