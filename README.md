@@ -24,5 +24,8 @@ Before running the Ansible playbook, ensure that you have:
 ## Customization
 
    1. Customize the website files in the website/ directory according to your needs.
-   2. Adjust variables and configurations in the playbook and templates as necessary.
-Feel free to contribute to or open issues in this repository.
+      
+   3. Adjust variables and configurations in the playbook and templates as necessary.
+      
+   5. Go to the inventory.ini and read the commented lines to undestand in accordance to your config
+   Feel free to contribute to or open issues in this repository.
