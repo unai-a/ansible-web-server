@@ -8,6 +8,34 @@ Before running the Ansible playbook, ensure that you have:
 - Ansible installed on the machine where you will run the playbook.
 - SSH access to the target machine (can be localhost if you are setting up the server on the same machine).
 
+## Install Ansible
+```bash
+sudo apt update
+```
+```bash
+sudo apt install ansible
+```
+
+## Check Ansible version
+```bash
+ansible --version
+```
+
+## Generate SSH key if not already done
+```bash
+ssh-keygen -t rsa -b 4096
+```
+
+## Copy SSH key to target machine (replace 'your_username' and 'your_server_ip' with actual values)
+```bash
+ssh-copy-id your_username@your_server_ip
+```
+
+## Test SSH connection to ensure access is set up
+```bash
+ssh your_username@your_server_ip
+```
+
 ## Usage
 
 1. Clone the repository:
