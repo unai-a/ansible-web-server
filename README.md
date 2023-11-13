@@ -1,4 +1,3 @@
-string readmeContent = @"
 # Ansible Web Server Setup
 
 This repository contains Ansible automation scripts for setting up a basic web server with Nginx, PHP, and deploying a website. The goal is to automate the process of configuring a server for hosting a website.
